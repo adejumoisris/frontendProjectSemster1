@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseOve</title>
+</head>
+<body>
+
+    <h1> using Mouse Over </h1>
+    <h2> Mouse Over Function </h2>
+
+    <div onmouseover="mOver(this)"  onmouseout="mOut(this)" onmousedown="mDoun(this)" 
+    style="background-color: red; width: 120px; height: 20px; padding: 40px;">
+        
+    </div>
+
+    <script>
+            function mDoun(obj){
+                obj.style.backgroundColor = "blue";
+                obj.innerHTML = "Release me "
+
+            }
+        function mOver(obj){
+            obj.innerHTML = " Thank you "
+        }
+
+        function mOut(obj){
+            obj.innerHTML = "Uzodima "
+        }
+    </script>
+    
+</body>
+</html>
